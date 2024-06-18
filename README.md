@@ -22,11 +22,11 @@
 - Mua hàng, nhận giảm giá các dịp đặc biệt
 
 ## Deploy
-Tải thư mục về localhost
+Tải thư mục, hoặc clone về localhost: `git clone https://github.com/pdd04/Project_Coffee_Management.git`
 
 Trước khi chạy, hãy nhớ cài đặt JDK 17 `https://www.oracle.com/java/technologies/downloads/#jdk17-windows`
 
-Khởi động IDE, Text Editor (Intelliji, Netbeans, VSCode, ...), mở thư mục `28_PhamDucLong` lên
+Khởi động IDE, Text Editor (Intelliji, Netbeans, VSCode, ...), mở thư mục `Project_Coffee_Management` lên
 
 Trước tiên hãy vào `src >> dao >> ConnectionProvider` để setting máy chủ SQLServer về localhost cá nhân
 
@@ -36,4 +36,4 @@ Cuối cùng, vào `src >> dao >> main` để khởi động ứng dụng.
 
 Lưu ý: 
 - Một số lỗi có thể phát sinh ra nếu bạn không chạy được `DatabaseInit`, lúc này hãy kiểm tra lại SQLServer của bạn, ví dụ như đã bật `sa` lên chưa, có `Trust server certificate` và `Encrypt connection` hay chưa. Đã cài đặt port 1433 chưa (Vào SQL Server Configuration để cài đặt) 
-- File database chỉ để xem các bảng, các Trigger mà nhóm sử dụng, không cần Exec file này vì JDBC đã tự động kết nối với SQLServer
+- File database chỉ để xem các bảng, các Trigger mà nhóm sử dụng, không cần Exec file này vì JDBC đã kết nối với SQLServer
